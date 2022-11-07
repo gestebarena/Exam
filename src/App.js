@@ -157,9 +157,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* 1. Header  */}
-      <h1>Exam</h1>
- 
+
       {/* 3. Show results or show the question game  */}
       {showFinalResults ? (
         /* 4. Final Results */
@@ -175,9 +173,9 @@ function App() {
         /* 5. Question Card  */
         <div className="question-card">
           {/* Current Question  */}
-          <h2>Score: {score} / {currentQuestion} - {currentQuestion > 0 ? (Math.round(score / currentQuestion * 100)) : 0}%</h2>
+          <h2></h2>
          <h2>
-            Question: {currentQuestion + 1} out of {questions.length}
+           {currentQuestion + 1} of {questions.length}   --   {score} / {currentQuestion} ({currentQuestion > 0 ? (Math.round(score / currentQuestion * 100)) : 0}%)
           </h2>
           <img className='picture' src= {questions[currentQuestion].image}></img>
           <h3 className="question-text">{questions[currentQuestion].text}</h3>

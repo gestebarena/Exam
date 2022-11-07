@@ -5,13 +5,13 @@
 .question-card{
   margin: 0 auto;
   background-color: gray;
-  padding: 16px;
+  padding: 8px;
   border-radius: 16px;
   color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 38 -18px;
 
-  width: 80%;
+  width: 60%;
   height: auto;
 }
 
@@ -20,17 +20,20 @@ ul{
 }
 
 li{
-  background-color: darkgray;
-  padding: 16px;
+  background-color: rgb(236, 230, 230);
+  padding: 10px;
   border: 3px solid white;
   border-radius: 20px;
-  font-size: 20px;
-  margin-top: 8px;
+  font-size: 16px;
+  margin-top: 6px;
+  font-weight: bold;
+  color:black;
 }
 
 .question-text{
-  color: darkblue;
-  font-size: 24px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .final-results{
