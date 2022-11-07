@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 
+
+
 function App() {
 
 // Properties
@@ -9,8 +11,94 @@ function App() {
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answered, setAnswered] = useState(false);
+  const [totalAnswered, setTotalAnswered] = useState(0);
+  const [done, setDone] = useState([]);
+  const [starting, setStarting] = useState(true);
+  const [sort, setSort] = useState(false);
+
+
 
   const questions = [
+    {
+      text: "Miten kasvit saavat vettä?",
+      image: "question.jpeg",
+      options: [
+        { id: 0, text: "Kasveja on kasteltava", isCorrect: false },
+        { id: 1, text: "Kasvit ottavat vettä maasta juurillaan", isCorrect: true },
+        { id: 2, text: "Kasvit ottavat vettä sateesta lehtineen", isCorrect: false },
+        { id: 3, text: "Kasvit eivät tarvitse vettä, ne ruokkivat auringosta", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Miksi ihmiset tarvitsevat vettä?",
+      image: "question.jpeg",
+      options: [
+        { id: 0, text: "Ihminen tarvitsee vettä hengittääkseen", isCorrect: false },
+        { id: 1, text: "Ihmisten täytyy juoda vettä, jotta he eivät jano ja voivat juosta nopeammin", isCorrect: false },
+        { id: 2, text: "Ihminen tarvitsee vettä syödessään hedelmiä ja vihanneksia voidakseen kasvaa vahvoiksi", isCorrect: false },
+        { id: 3, text: "Ihminen tarvitsee vettä elääkseen, ja vesi jättää ihmiseen koko ajan virtsaa, hikeä ja hengitystä", isCorrect: true },
+      ],
+    },
+
+    {
+      text: "Nico painaa 30 kg.  Laske kuinka paljon Nicossa on vettä.",
+      image: "question.jpeg",
+      options: [
+        { id: 0, text: "15 kg", isCorrect: false },
+        { id: 1, text: "20 kg", isCorrect: true },
+        { id: 2, text: "25 kg", isCorrect: false },
+        { id: 3, text: "30 kg", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Isä painaa 80 kg.  Laske kuinka paljon Isä on vettä.",
+      image: "question.jpeg",
+      options: [
+        { id: 0, text: "30 kg", isCorrect: false },
+        { id: 1, text: "40 kg", isCorrect: false },
+        { id: 2, text: "50 kg", isCorrect: true },
+        { id: 3, text: "60 kg", isCorrect: false },
+      ],
+    },
+
+
+    {
+      text: "Miten ihmiset menettävät vettä?",
+      image: "question.jpeg",
+      options: [
+        { id: 0, text: "Hengittäminen, virtsaaminen ja syöminen", isCorrect: false },
+        { id: 1, text: "Syö hedelmiä, juo vettä ja maitoa", isCorrect: false },
+        { id: 2, text: "Virtsaaminen, hengitys ja hikoilu", isCorrect: true },
+        { id: 3, text: "Virtsaaminen, syöminen ja hikoilu", isCorrect: false },
+      ],
+    },
+
+
+    {
+      text: "Miten ihminen saa vettä?",
+      image: "question.jpeg",
+      options: [
+        { id: 0, text: "Hengittäminen, virtsaaminen ja syöminen", isCorrect: false },
+        { id: 1, text: "Syö hedelmiä, juo vettä ja maitoa", isCorrect: true },
+        { id: 2, text: "Juominen, hedelmien syöminen ja nukkuminen", isCorrect: false },
+        { id: 3, text: "Virtsaaminen, syöminen ja hikoilu", isCorrect: false },
+      ],
+    },
+
+
+    {
+      text: "Voiko merivettä juoda? Miksi?",
+      image: "question.jpeg",
+      options: [
+        { id: 0, text: "Ei, merivesi on suolaista", isCorrect: true },
+        { id: 1, text: "Ei, meiltä loppuisi vesi", isCorrect: false },
+        { id: 2, text: "Kyllä merivettä riittää", isCorrect: false },
+        { id: 3, text: "Kyllä, se on terveellistä, koska se on puhdasta ja tuoretta", isCorrect: false },
+      ],
+    },
+
     {
       text: "What is 1?",
       image: "11-0.jpg",
@@ -666,8 +754,7 @@ function App() {
     }
 
   ];
-
-
+    
 
 // Helper functions
 
@@ -677,10 +764,27 @@ function App() {
       if (isCorrect) {
         setScore(score+1);
       }
-    } else {
+    } else 
+    {
 
-      if (currentQuestion + 1 < questions.length){
-        setCurrentQuestion(currentQuestion + 1);
+      if (totalAnswered + 1 < questions.length){
+
+        let randomIndex;
+        
+        do
+        {
+          randomIndex= Math.floor(Math.random() * questions.length);
+        }  
+        while(done.includes(randomIndex));
+
+        done.push(randomIndex);
+        if (sort){
+          setCurrentQuestion(randomIndex);
+        }
+        else
+          setCurrentQuestion(currentQuestion+1);
+
+        setTotalAnswered(totalAnswered+1)
         setAnswered(false);
       } else {
         setFinalResults(true);
@@ -690,10 +794,41 @@ function App() {
 
   const restartGame = () =>{
     setScore(0);
-    setCurrentQuestion(0);
+    setDone([]);
+    if (sort){
+      setCurrentQuestion(Math.floor(Math.random() * questions.length));
+    }
+    else
+      setCurrentQuestion(0);
+    setAnswered(false);
     setFinalResults(false);
+    setTotalAnswered(0);
   }
 
+  function shuffleArray(array) {
+    let currentIndex = array.length,  randomIndex;
+  
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+  }
+  
+  if (starting)
+  {
+    setStarting(false);
+    restartGame();
+  }
+  
   return (
     <div className="App">
 
@@ -714,7 +849,7 @@ function App() {
           {/* Current Question  */}
           <h2></h2>
          <h2>
-           {currentQuestion + 1} of {questions.length}   --   {score} / {currentQuestion} ({currentQuestion > 0 ? (Math.round(score / currentQuestion * 100)) : 0}%)
+           {totalAnswered + 1} of {questions.length}   --   {score} / {totalAnswered} ({totalAnswered > 0 ? (Math.round(score / totalAnswered * 100)) : 0}%)
           </h2>
           <img className='picture' src= {questions[currentQuestion].image}></img>
           <h3 className="question-text">{questions[currentQuestion].text}</h3>
