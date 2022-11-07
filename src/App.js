@@ -247,6 +247,423 @@ function App() {
       ],
     },
 
+    {
+      text: "Which plant is this?",
+      image: "11-1.jpeg",
+      options: [
+        { id: 0, text: "tervaleppä", isCorrect: true },
+        { id: 1, text: "ulpukka", isCorrect: false },
+        { id: 2, text: "paju", isCorrect: false },
+        { id: 3, text: "osmankäämi", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which plant is this?",
+      image: "11-2.jpeg",
+      options: [
+        { id: 0, text: "tervaleppä", isCorrect: false },
+        { id: 1, text: "ulpukka", isCorrect: false },
+        { id: 2, text: "paju", isCorrect: true },
+        { id: 3, text: "osmankäämi", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which plant is this?",
+      image: "11-3.jpeg",
+      options: [
+        { id: 0, text: "järviruoko", isCorrect: true },
+        { id: 1, text: "ulpukka", isCorrect: false },
+        { id: 2, text: "paju", isCorrect: false },
+        { id: 3, text: "järvirutto", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which plant is this?",
+      image: "11-4.jpeg",
+      options: [
+        { id: 0, text: "tervaleppä", isCorrect: false },
+        { id: 1, text: "ulpukka", isCorrect: false },
+        { id: 2, text: "paju", isCorrect: false },
+        { id: 3, text: "osmankäämi", isCorrect: true },
+      ],
+    },
+
+    {
+      text: "Which plant is this?",
+      image: "11-5.jpeg",
+      options: [
+        { id: 0, text: "lumme", isCorrect: true },
+        { id: 1, text: "ulpukka", isCorrect: false },
+        { id: 2, text: "paju", isCorrect: false },
+        { id: 3, text: "järviruoko", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which plant is this?",
+      image: "11-6.jpeg",
+      options: [
+        { id: 0, text: "lumme", isCorrect: false },
+        { id: 1, text: "ulpukka", isCorrect: true },
+        { id: 2, text: "paju", isCorrect: false },
+        { id: 3, text: "järviruoko", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which plant is this?",
+      image: "11-7.jpeg",
+      options: [
+        { id: 0, text: "tervaleppä", isCorrect: false },
+        { id: 1, text: "ahvenvita", isCorrect: true },
+        { id: 2, text: "vesirutto", isCorrect: false },
+        { id: 3, text: "vesiruoko", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which plant is this?",
+      image: "11-8.jpeg",
+      options: [
+        { id: 0, text: "tervaleppä", isCorrect: false },
+        { id: 1, text: "ahvenvita", isCorrect: false },
+        { id: 2, text: "vesirutto", isCorrect: true },
+        { id: 3, text: "vesiruoko", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which fish is this?",
+      image: "12-1.jpeg",
+      options: [
+        { id: 0, text: "hauki", isCorrect: true },
+        { id: 1, text: "muikku", isCorrect: false },
+        { id: 2, text: "silakka", isCorrect: false },
+        { id: 3, text: "siika", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which fish is this?",
+      image: "12-2.jpeg",
+      options: [
+        { id: 0, text: "made", isCorrect: false },
+        { id: 1, text: "lohi", isCorrect: false },
+        { id: 2, text: "särki", isCorrect: false },
+        { id: 3, text: "ahven", isCorrect: true },
+      ],
+    },
+
+    {
+      text: "Which fish is this?",
+      image: "12-3.jpeg",
+      options: [
+        { id: 0, text: "made", isCorrect: false },
+        { id: 1, text: "lohi", isCorrect: false },
+        { id: 2, text: "särki", isCorrect: true },
+        { id: 3, text: "ahven", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which fish is this?",
+      image: "12-4.jpeg",
+      options: [
+        { id: 0, text: "made", isCorrect: false },
+        { id: 1, text: "lohi", isCorrect: true },
+        { id: 2, text: "särki", isCorrect: false },
+        { id: 3, text: "ahven", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which fish is this?",
+      image: "12-5.jpeg",
+      options: [
+        { id: 0, text: "hauki", isCorrect: false },
+        { id: 1, text: "muikku", isCorrect: true },
+        { id: 2, text: "silakka", isCorrect: false },
+        { id: 3, text: "siika", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which fish is this?",
+      image: "12-6.jpeg",
+      options: [
+        { id: 0, text: "siika", isCorrect: true },
+        { id: 1, text: "muikku", isCorrect: false },
+        { id: 2, text: "silakka", isCorrect: false },
+        { id: 3, text: "särki", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which fish is this?",
+      image: "12-7.jpeg",
+      options: [
+        { id: 0, text: "hauki", isCorrect: false },
+        { id: 1, text: "muikku", isCorrect: false },
+        { id: 2, text: "silakka", isCorrect: true },
+        { id: 3, text: "siika", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which fish is this?",
+      image: "12-8.jpeg",
+      options: [
+        { id: 0, text: "made", isCorrect: true },
+        { id: 1, text: "lohi", isCorrect: false },
+        { id: 2, text: "särki", isCorrect: false },
+        { id: 3, text: "ahven", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which bird is this?",
+      image: "13-1.jpeg",
+      options: [
+        { id: 0, text: "sinisorsa", isCorrect: true },
+        { id: 1, text: "haahka", isCorrect: false },
+        { id: 2, text: "telkkä", isCorrect: false },
+        { id: 3, text: "naurulokki", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which bird is this?",
+      image: "13-2.jpeg",
+      options: [
+        { id: 0, text: "sinisorsa", isCorrect: false },
+        { id: 1, text: "haahka", isCorrect: false },
+        { id: 2, text: "laulujuotsen", isCorrect: true },
+        { id: 3, text: "naurulokki", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which bird is this?",
+      image: "13-3.jpeg",
+      options: [
+        { id: 0, text: "laulujuotsen", isCorrect: false },
+        { id: 1, text: "telkkä", isCorrect: false },
+        { id: 2, text: "kuovi", isCorrect: false },
+        { id: 3, text: "silkkiuikku", isCorrect: true },
+      ],
+    },
+
+    {
+      text: "Which bird is this?",
+      image: "13-4.jpeg",
+      options: [
+        { id: 0, text: "sinisorsa", isCorrect: false },
+        { id: 1, text: "haahka", isCorrect: false },
+        { id: 2, text: "telkkä", isCorrect: true },
+        { id: 3, text: "naurulokki", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which bird is this?",
+      image: "13-5.jpeg",
+      options: [
+        { id: 0, text: "sinisorsa", isCorrect: false },
+        { id: 1, text: "haahka", isCorrect: true },
+        { id: 2, text: "telkkä", isCorrect: false },
+        { id: 3, text: "naurulokki", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which bird is this?",
+      image: "13-6.jpeg",
+      options: [
+        { id: 0, text: "naurulokki", isCorrect: true },
+        { id: 1, text: "kurki", isCorrect: false },
+        { id: 2, text: "kuovi", isCorrect: false },
+        { id: 3, text: "silkkiuikku", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which bird is this?",
+      image: "13-7.jpeg",
+      options: [
+        { id: 0, text: "naurulokki", isCorrect: false },
+        { id: 1, text: "kurki", isCorrect: false },
+        { id: 2, text: "kuovi", isCorrect: true },
+        { id: 3, text: "silkkiuikku", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which bird is this?",
+      image: "13-8.jpeg",
+      options: [
+        { id: 0, text: "naurulokki", isCorrect: false },
+        { id: 1, text: "kurki", isCorrect: true },
+        { id: 2, text: "kuovi", isCorrect: false },
+        { id: 3, text: "silkkiuikku", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which animal is this?",
+      image: "14-1.jpeg",
+      options: [
+        { id: 0, text: "majava", isCorrect: true },
+        { id: 1, text: "saukko", isCorrect: false },
+        { id: 2, text: "piisami", isCorrect: false },
+        { id: 3, text: "vesimyyrä", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which animal is this?",
+      image: "14-2.jpeg",
+      options: [
+        { id: 0, text: "majava", isCorrect: false },
+        { id: 1, text: "saukko", isCorrect: false },
+        { id: 2, text: "piisami", isCorrect: false },
+        { id: 3, text: "vesimyyrä", isCorrect: true },
+      ],
+    },
+
+    {
+      text: "Which animal is this?",
+      image: "14-3.jpeg",
+      options: [
+        { id: 0, text: "saimaannorppa", isCorrect: true },
+        { id: 1, text: "harmaahylje", isCorrect: false },
+        { id: 2, text: "piisami", isCorrect: false },
+        { id: 3, text: "vesimyyrä", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which animal is this?",
+      image: "14-4.jpeg",
+      options: [
+        { id: 0, text: "majava", isCorrect: false },
+        { id: 1, text: "saukko", isCorrect: false },
+        { id: 2, text: "piisami", isCorrect: true },
+        { id: 3, text: "vesimyyrä", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which animal is this?",
+      image: "14-5.jpeg",
+      options: [
+        { id: 0, text: "majava", isCorrect: false },
+        { id: 1, text: "saukko", isCorrect: true },
+        { id: 2, text: "piisami", isCorrect: false },
+        { id: 3, text: "vesimyyrä", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which animal is this?",
+      image: "14-6.jpeg",
+      options: [
+        { id: 0, text: "saimaannorppa", isCorrect: false },
+        { id: 1, text: "harmaahylje", isCorrect: true },
+        { id: 2, text: "piisami", isCorrect: false },
+        { id: 3, text: "vesimyyrä", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which animal is this?",
+      image: "15-1.jpeg",
+      options: [
+        { id: 0, text: "hevosjuotikas", isCorrect: false },
+        { id: 1, text: "sinisimpukka", isCorrect: false },
+        { id: 2, text: "rapu", isCorrect: true },
+        { id: 3, text: "järvisimpukka", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which animal is this?",
+      image: "15-2.jpeg",
+      options: [
+        { id: 0, text: "hevosjuotikas", isCorrect: false },
+        { id: 1, text: "sinisimpukka", isCorrect: false },
+        { id: 2, text: "sudenkorento", isCorrect: false },
+        { id: 3, text: "järvisimpukka", isCorrect: true },
+      ],
+    },
+
+    {
+      text: "Which animal is this?",
+      image: "15-3.jpeg",
+      options: [
+        { id: 0, text: "hevosjuotikas", isCorrect: false },
+        { id: 1, text: "sinisimpukka", isCorrect: true },
+        { id: 2, text: "sudenkorento", isCorrect: false },
+        { id: 3, text: "järvisimpukka", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which animal is this?",
+      image: "15-4.jpeg",
+      options: [
+        { id: 0, text: "hevosjuotikas", isCorrect: false },
+        { id: 1, text: "sudenkorento", isCorrect: false },
+        { id: 2, text: "rantahämähäkki", isCorrect: false },
+        { id: 3, text: "liejukotilo", isCorrect: true },
+      ],
+    },
+
+    {
+      text: "Which animal is this?",
+      image: "15-5.jpeg",
+      options: [
+        { id: 0, text: "hevosjuotikas", isCorrect: false },
+        { id: 1, text: "sudenkorento", isCorrect: false },
+        { id: 2, text: "rantahämähäkki", isCorrect: true },
+        { id: 3, text: "vesimittari", isCorrect: false },,
+      ],
+    },
+
+    {
+      text: "Which animal is this?",
+      image: "15-6.jpeg",
+      options: [
+        { id: 0, text: "hevosjuotikas", isCorrect: true },
+        { id: 1, text: "sudenkorento", isCorrect: false },
+        { id: 2, text: "rantahämähäkki", isCorrect: false },
+        { id: 3, text: "vesimittari", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which animal is this?",
+      image: "15-7.jpeg",
+      options: [
+        { id: 0, text: "hevosjuotikas", isCorrect: false },
+        { id: 1, text: "sudenkorento", isCorrect: true },
+        { id: 2, text: "rantahämähäkki", isCorrect: false },
+        { id: 3, text: "vesimittari", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Which animal is this?",
+      image: "15-8.jpeg",
+      options: [
+        { id: 0, text: "hevosjuotikas", isCorrect: false },
+        { id: 1, text: "sudenkorento", isCorrect: false },
+        { id: 2, text: "rantahämähäkki", isCorrect: false },
+        { id: 3, text: "vesimittari", isCorrect: true },
+      ],
+    }
 
   ];
 
