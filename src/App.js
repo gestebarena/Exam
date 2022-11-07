@@ -81,6 +81,7 @@ function App() {
         { id: 3, text: "järviruoko", isCorrect: false },
       ],
     },
+
     {
       text: "What is 8?",
       image: "11-0.jpg",
@@ -91,47 +92,162 @@ function App() {
         { id: 3, text: "järviruoko", isCorrect: false },
       ],
     },
+
     {
-      text: "What year was the Constitution of America written?",
+      text: "What is A?",
       image: "kala.jpg",
       options: [
-        { id: 0, text: "1787", isCorrect: true },
-        { id: 1, text: "1776", isCorrect: false },
-        { id: 2, text: "1774", isCorrect: false },
-        { id: 3, text: "1826", isCorrect: false },
+        { id: 0, text: "selkäevät", isCorrect: false },
+        { id: 1, text: "uimarakko", isCorrect: false },
+        { id: 2, text: "selkäranka", isCorrect: true },
+        { id: 3, text: "kidukset", isCorrect: false },
       ],
     },
 
     {
-      text: "Who was the second president of the US?",
+      text: "What is C?",
       image: "kala.jpg",
       options: [
-        { id: 0, text: "John Adams", isCorrect: true },
-        { id: 1, text: "Paul Revere", isCorrect: false },
-        { id: 2, text: "Thomas Jefferson", isCorrect: false },
-        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+        { id: 0, text: "selkäevät", isCorrect: true },
+        { id: 1, text: "pyrstöevä", isCorrect: false },
+        { id: 2, text: "selkäranka", isCorrect: false },
+        { id: 3, text: "peräevä", isCorrect: false },
       ],
     },
+
     {
-      text: "What is the largest state in the US?",
+      text: "What is B?",
       image: "kala.jpg",
       options: [
-        { id: 0, text: "California", isCorrect: false },
-        { id: 1, text: "Alaska", isCorrect: true },
-        { id: 2, text: "Texas", isCorrect: false },
-        { id: 3, text: "Montana", isCorrect: false },
+        { id: 0, text: "selkäevät", isCorrect: false },
+        { id: 1, text: "pyrstöevä", isCorrect: true },
+        { id: 2, text: "selkäranka", isCorrect: false },
+        { id: 3, text: "peräevä", isCorrect: false },
       ],
     },
+
     {
-      text: "Which of the following countries DO NOT border the US?",
+      text: "What is D?",
       image: "kala.jpg",
       options: [
-        { id: 0, text: "Canada", isCorrect: false },
-        { id: 1, text: "Russia", isCorrect: true },
-        { id: 2, text: "Cuba", isCorrect: true },
-        { id: 3, text: "Mexico", isCorrect: false },
+        { id: 0, text: "selkäevät", isCorrect: false },
+        { id: 1, text: "pyrstöviiva", isCorrect: false },
+        { id: 2, text: "kylkiviiva", isCorrect: true },
+        { id: 3, text: "peräevä", isCorrect: false },
       ],
     },
+
+    {
+      text: "What is E?",
+      image: "kala.jpg",
+      options: [
+        { id: 0, text: "selkäevät", isCorrect: false },
+        { id: 1, text: "pyrstöevä", isCorrect: false },
+        { id: 2, text: "uimaevä", isCorrect: false },
+        { id: 3, text: "peräevä", isCorrect: true },
+      ],
+    },
+
+    {
+      text: "What is F?",
+      image: "kala.jpg",
+      options: [
+        { id: 0, text: "selkäevät", isCorrect: false },
+        { id: 1, text: "uimarakko", isCorrect: true },
+        { id: 2, text: "mätipussi", isCorrect: false },
+        { id: 3, text: "peräevä", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "What is G?",
+      image: "kala.jpg",
+      options: [
+        { id: 0, text: "mätipussi", isCorrect: true },
+        { id: 1, text: "pyrstöevä", isCorrect: false },
+        { id: 2, text: "selkäranka", isCorrect: false },
+        { id: 3, text: "peräevä", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "What is H?",
+      image: "kala.jpg",
+      options: [
+        { id: 0, text: "vatsaevä", isCorrect: true },
+        { id: 1, text: "pyrstöevä", isCorrect: false },
+        { id: 2, text: "uimaevä", isCorrect: false },
+        { id: 3, text: "peräevä", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "What is I?",
+      image: "kala.jpg",
+      options: [
+        { id: 0, text: "sydän", isCorrect: false },
+        { id: 1, text: "suoli", isCorrect: true },
+        { id: 2, text: "silma", isCorrect: false },
+        { id: 3, text: "suomuja", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "What is J?",
+      image: "kala.jpg",
+      options: [
+        { id: 0, text: "sydän", isCorrect: false },
+        { id: 1, text: "suoli", isCorrect: false },
+        { id: 2, text: "maha", isCorrect: true },
+        { id: 3, text: "suomuja", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "What is K?",
+      image: "kala.jpg",
+      options: [
+        { id: 0, text: "sydän", isCorrect: true },
+        { id: 1, text: "suoli", isCorrect: false },
+        { id: 2, text: "silma", isCorrect: false },
+        { id: 3, text: "suomuja", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "What is L?",
+      image: "kala.jpg",
+      options: [
+        { id: 0, text: "sydän", isCorrect: false },
+        { id: 1, text: "suoli", isCorrect: false },
+        { id: 2, text: "silma", isCorrect: true },
+        { id: 3, text: "suomuja", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "What is M?",
+      image: "kala.jpg",
+      options: [
+        { id: 0, text: "selkäevät", isCorrect: false },
+        { id: 1, text: "uimarakko", isCorrect: false },
+        { id: 2, text: "selkäranka", isCorrect: false },
+        { id: 3, text: "kidukset", isCorrect: true },
+      ],
+    },
+
+    {
+      text: "What is N?",
+      image: "kala.jpg",
+      options: [
+        { id: 0, text: "sydän", isCorrect: false },
+        { id: 1, text: "suoli", isCorrect: false },
+        { id: 2, text: "silma", isCorrect: false },
+        { id: 3, text: "suomuja", isCorrect: true },
+      ],
+    },
+
+
   ];
 
 
