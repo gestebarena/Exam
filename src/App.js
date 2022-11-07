@@ -105,7 +105,7 @@ function App() {
     },
 
     {
-      text: "What is C?",
+      text: "What is B?",
       image: "kala.jpg",
       options: [
         { id: 0, text: "selkäevät", isCorrect: true },
@@ -116,7 +116,7 @@ function App() {
     },
 
     {
-      text: "What is B?",
+      text: "What is C?",
       image: "kala.jpg",
       options: [
         { id: 0, text: "selkäevät", isCorrect: false },
