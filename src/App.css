@@ -32,6 +32,16 @@ li{
   color:black;
 }
 
+.li_right{
+  background-color: green;
+  color:white;
+}
+
+.li_wrong{
+  background-color: red;
+  color:white;
+}
+
 .question-text{
   color: white;
   font-size: 16px;

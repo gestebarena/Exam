@@ -8,6 +8,7 @@ function App() {
   const [showFinalResults, setFinalResults] = useState(false);
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [answered, setAnswered] = useState(false);
 
   const questions = [
     {
@@ -138,14 +139,19 @@ function App() {
 // Helper functions
 
   const optionClicked = (isCorrect) => {
-    if (isCorrect) {
-      setScore(score+1);
-    }
-
-    if (currentQuestion + 1 < questions.length){
-      setCurrentQuestion(currentQuestion + 1);
+    if(!answered){
+      setAnswered(true)
+      if (isCorrect) {
+        setScore(score+1);
+      }
     } else {
-      setFinalResults(true);
+
+      if (currentQuestion + 1 < questions.length){
+        setCurrentQuestion(currentQuestion + 1);
+        setAnswered(false);
+      } else {
+        setFinalResults(true);
+      }
     }
   }
 
@@ -184,7 +190,9 @@ function App() {
           <ul>
             {questions[currentQuestion].options.map((option) => {
               return (
-                <li onClick={() => optionClicked(option.isCorrect)}
+                <li 
+                  className = {answered && option.isCorrect? 'li_right' : answered ? 'li_wrong' : 'li'}
+                  onClick={() => optionClicked(option.isCorrect)}
                   key={option.id}
                 >
                   {option.text}
