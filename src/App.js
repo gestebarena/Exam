@@ -45,10 +45,10 @@ function App() {
       text: "Nico painaa 30 kg.  Laske kuinka paljon Nicossa on vettä.",
       image: "question.jpeg",
       options: [
-        { id: 0, text: "15 kg", isCorrect: false },
-        { id: 1, text: "20 kg", isCorrect: true },
-        { id: 2, text: "25 kg", isCorrect: false },
-        { id: 3, text: "30 kg", isCorrect: false },
+        { id: 0, text: "14-16 kg", isCorrect: false },
+        { id: 1, text: "18-20 kg", isCorrect: true },
+        { id: 2, text: "22-24 kg", isCorrect: false },
+        { id: 3, text: "28-30 kg", isCorrect: false },
       ],
     },
 
@@ -56,10 +56,10 @@ function App() {
       text: "Isä painaa 80 kg.  Laske kuinka paljon Isä on vettä.",
       image: "question.jpeg",
       options: [
-        { id: 0, text: "30 kg", isCorrect: false },
-        { id: 1, text: "40 kg", isCorrect: false },
-        { id: 2, text: "50 kg", isCorrect: true },
-        { id: 3, text: "60 kg", isCorrect: false },
+        { id: 0, text: "28-30 kg", isCorrect: false },
+        { id: 1, text: "38-40 kg", isCorrect: false },
+        { id: 2, text: "48-50 kg", isCorrect: true },
+        { id: 3, text: "58-60 kg", isCorrect: false },
       ],
     },
 
@@ -750,6 +750,72 @@ function App() {
         { id: 1, text: "sudenkorento", isCorrect: false },
         { id: 2, text: "rantahämähäkki", isCorrect: false },
         { id: 3, text: "vesimittari", isCorrect: true },
+      ],
+    },
+
+    {
+      text: "Mitä ominaisuuksia käytetään kasvien tunnistamiseen?",
+      image: "question.jpeg",
+      options: [
+        { id: 0, text: "Lehden muoto, tuntosarvet ja kukan väri", isCorrect: false },
+        { id: 1, text: "Kidukset, kasvin koko ja karvapeite", isCorrect: false },
+        { id: 2, text: "Kukan väri, kidukset ja kasvin koko", isCorrect: false },
+        { id: 3, text: "Lehden muoto, kukan väri ja kasvin koko", isCorrect: true },
+      ],
+    },
+
+    {
+      text: "Millä voit tutkia hyönteisiä?",
+      image: "question.jpeg",
+      options: [
+        { id: 0, text: "Suurennuslasilla tai luupilla", isCorrect: true },
+        { id: 1, text: "Kartalla tai kompassilla", isCorrect: false },
+        { id: 2, text: "Kynällä tai kumilla", isCorrect: false },
+        { id: 3, text: "Lämpömittarinlla", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Mitä varusteita pakkaat reppuusi, jos lähdet retkelle rannalle?",
+      image: "question.jpeg",
+      options: [
+        { id: 0, text: "Suurennuslasi, luuppi, läpinäkyvä muki, mittanauha ja lämpömittari", isCorrect: true },
+        { id: 1, text: "Suurennuslasi, jalkapallo, läpinäkyvä muki, sanakirja ja lämpömittari", isCorrect: false },
+        { id: 2, text: "Värikyniä, jalkapallo, läpinäkyvä muki, sanakirja ja lämpömittari", isCorrect: false },
+        { id: 3, text: "Värikyniä, luuppi, läpinäkyvä muki, hajuvettä ja lämpömittari", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Millä kalat hengittävät?",
+      image: "question.jpeg",
+      options: [
+        { id: 0, text: "Kala hengittää keuhkoilla", isCorrect: false },
+        { id: 1, text: "Kala hengittää kiduksilla", isCorrect: true },
+        { id: 2, text: "Kala hengittää uimarakolla", isCorrect: false },
+        { id: 3, text: "Kalat menevät pintaan hengittämään", isCorrect: false },
+      ],
+    },
+
+    {
+      text: "Miten kalat lisääntyvät?",
+      image: "question.jpeg",
+      options: [
+        { id: 0, text: "Kalat lisääntyvät munimalla", isCorrect: false },
+        { id: 1, text: "Kalat syntyvät äyriäisistä", isCorrect: false },
+        { id: 2, text: "Kalat lisääntyvät kutemalla", isCorrect: true },
+        { id: 3, text: "Kalat lisääntyvät synnyttämällä eläviä poikasia", isCorrect: false },
+      ],
+    },
+        
+    {
+      text: "Miten kalat lisääntyvät?",
+      image: "question.jpeg",
+      options: [
+        { id: 0, text: "Kalat lisääntyvät munimalla", isCorrect: false },
+        { id: 1, text: "Kalat syntyvät äyriäisistä", isCorrect: false },
+        { id: 2, text: "Kalat lisääntyvät kutemalla", isCorrect: true },
+        { id: 3, text: "Kalat lisääntyvät synnyttämällä eläviä poikasia", isCorrect: false },
       ],
     }
 
