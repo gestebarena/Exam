@@ -14,7 +14,9 @@ function App() {
   const [totalAnswered, setTotalAnswered] = useState(0);
   const [done, setDone] = useState([]);
   const [starting, setStarting] = useState(true);
-  const [sort, setSort] = useState(true);
+  const [sort, setSort] = useState(false);
+
+  const [thisOptions, setThisOptions] = useState([]);
 
 
 
@@ -844,13 +846,24 @@ function App() {
         while(done.includes(randomIndex));
 
         done.push(randomIndex);
+        let index;
+
         if (sort){
-          setCurrentQuestion(randomIndex);
+          index = randomIndex;
         }
         else
-          setCurrentQuestion(currentQuestion+1);
+        {
+          index =  currentQuestion+1;
+        }
+    
+        setCurrentQuestion(index);
+        setThisOptions(questions[index].options.sort(() => Math.random() - 0.5));
 
-        setTotalAnswered(totalAnswered+1)
+        setTotalAnswered(totalAnswered+1);
+        //console.log(questions[currentQuestion].options);
+        //setThisOptions (questions[currentQuestion].options.sort(() => Math.random() - 0.5));
+        //console.log(thisOptions);
+
         setAnswered(false);
       } else {
         setFinalResults(true);
@@ -861,33 +874,31 @@ function App() {
   const restartGame = () =>{
     setScore(0);
     setDone([]);
+
+    let index;
     if (sort){
-      setCurrentQuestion(Math.floor(Math.random() * questions.length));
+      index = Math.floor(Math.random() * questions.length);
     }
     else
-      setCurrentQuestion(0);
+    {
+      index = 0;
+    }
+
+    setCurrentQuestion(index);
+    setThisOptions(questions[index].options);
+
+
+
+    //console.log(questions[currentQuestion].options);
+    //setThisOptions (questions[currentQuestion].options.sort(() => Math.random() - 0.5));
+    //console.log(thisOptions);
+
+
     setAnswered(false);
     setFinalResults(false);
     setTotalAnswered(0);
   }
 
-  function shuffleArray(array) {
-    let currentIndex = array.length,  randomIndex;
-  
-    // While there remain elements to shuffle.
-    while (currentIndex != 0) {
-  
-      // Pick a remaining element.
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-  
-      // And swap it with the current element.
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
-    }
-  
-    return array;
-  }
   
   if (starting)
   {
@@ -915,14 +926,14 @@ function App() {
           {/* Current Question  */}
           <h2></h2>
          <h2>
-           {totalAnswered + 1} of {questions.length}   --   {score} / {totalAnswered} ({totalAnswered > 0 ? (Math.round(score / totalAnswered * 100)) : 0}%)
+           {totalAnswered + 1} of {questions.length}   --   {score} / {totalAnswered + (answered? 1:0)} ({totalAnswered > 0 ? (Math.round(score / (totalAnswered+ (answered? 1:0)) * 100)) : 0}%)
           </h2>
           <img className='picture' src= {questions[currentQuestion].image}></img>
           <h3 className="question-text">{questions[currentQuestion].text}</h3>
 
           {/* List of possible answers  */}
           <ul>
-            {questions[currentQuestion].options.map((option) => {
+            {thisOptions.map((option) => {
               return (
                 <li 
                   className = {answered && option.isCorrect? 'li_right' : answered ? 'li_wrong' : 'li'}
