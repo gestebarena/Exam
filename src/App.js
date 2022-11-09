@@ -14,7 +14,7 @@ function App() {
   const [totalAnswered, setTotalAnswered] = useState(0);
   const [done, setDone] = useState([]);
   const [starting, setStarting] = useState(true);
-  const [sort, setSort] = useState(false);
+  const [sort, setSort] = useState(true);
 
   const [thisOptions, setThisOptions] = useState([]);
 
